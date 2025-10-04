@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color:rgb(31, 73, 136);
+}
+#qoute-div{
+    background-color: white;
+    display: flex;
+    width: 450px;
+    height: 350px;
+    color: black;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+#qoute-div *{
+    margin-left: 150px;
+}
+button{
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(31, 73, 136);;
+    color: white;
+    border: none;
+}

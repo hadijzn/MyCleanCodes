@@ -1,19 +1,34 @@
-import { ReadonlyRequestCookies } from "next/dist/server/web/spec-extension/adapters/request-cookies";
-import { cookies } from "next/headers";
-import { createBrowserClient, createServerClient } from "@supabase/ssr";
-import { get } from "http";
-export const supabaseClient = createBrowserClient<Database> (
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
-export const supabaseServerClient = (cookie : ReadonlyRequestCookies) => createServerClient<Database>(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+import { createServerClient } from "@supabase/ssr"
+import { cookies } from "next/headers"
+
+// export const supabaseServerClient = () => {
+//   const cookieStore = cookies()
+//   return createServerClient<Database>(
+//     process.env.SUPABASE_URL!,
+//     process.env.SUPABASE_KEY!,
+//     {
+//       cookies: {
+//         get(name: string) {
+//           return  cookieStore.get(name)?.value
+//         }
+//       }
+//     }
+//   )
+// }
+
+
+export const supabaseServerClient = () => {
+  const cookiesStore = cookies()
+  return createServerClient<Database>(
+    process.env.SUPABASE_URL!,
+    process.env.SUPABASE_KEY!,
     {
-        cookies :  {
-            get(name:string){
-                return cookie.get(name)?.value
-            }
+      cookies: {
+        get(name: string) {
+          return cookiesStore.get(name)?.value
         }
+      }
     }
-)
+  )
+}
+

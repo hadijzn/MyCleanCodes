@@ -7,6 +7,7 @@ import Products from './Product/page';
 import Modal from './modal/Modal';
 
 export default function Home () {
+  
   return (
     <div className='font-serif'>
       <header className=' bg-orange-500 f '>        

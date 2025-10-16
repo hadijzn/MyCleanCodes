@@ -42,4 +42,5 @@ export default function Skills() {
 // make a array for languages
 // This section is no need to language persian just section need to two language مهارت ها و skills
 // TODO = give this a animation for percent of languages
-// TODO = Give the skills a beatifull hover animation when hover shadow , border turn to bg-ornage
+// TODO = Nazanin said make larger of rectangle of skills
+// TODO = Give scale when make reload on page : this learning exist on react learning of bootcmap یعنی عکس ها پرش نداشته باشن فک کنم تو پروژه فروشگاه جاواسکریپت باشه یا ری اکت دقیق یادم نیس 

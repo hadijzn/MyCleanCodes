@@ -1,3 +1,19 @@
+
+// // TODO = Make this section in also persian
+// // TODO = give title on map in Education
+// // TODO = give underline to Education and language
+// // TODO = give edu star scroll of there own
+// // TODO = language need to slice beacuse have circles animation and every item need there own and price
+// // TODO = Make underline under the loozy
+// //className=" bg-[#1e1e1e] border-2 border-[rgba(255,127,80,1)] rounded-xl overflow-hidden transition-all duration-500 ease-in-out hover:border-opacity-0 hover:shadow-[0_0_0_4px_rgba(135,206,250,0.5)] flex flex-col items-center justify-between p-3"
+// TODO = Make this section in also persian
+// TODO = give title on map in Education
+// TODO = give underline to Education and language
+// TODO = give edu star scroll of there own
+// TODO = language need to slice beacuse have circles animation and every item need there own and price
+// TODO = Make underline under the loozy
+// TODO = Make hover what you said to nazanin animation 
+
 export default function EduLang() {
   const education = [
     { schoolname: "Lorem (2018-19)", description: "Lorem Ipsum dolor" },
@@ -25,7 +41,7 @@ export default function EduLang() {
   ];
 
   return (
-    <section className="flex justify-around gap-4 h-screen mt-20 ">
+    <section className="flex justify-around gap-4  mt-20 ">
       <div className="  w-md mr-20 h-4/6 flex  flex-col  border-1 rounded-xl  border-[rgba(255,127,80,1)]">
         <div className="mt-6 ml-6 ">
           <p className="md:text-4xl ">Education</p>
